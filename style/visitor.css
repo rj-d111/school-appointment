@@ -1,0 +1,9 @@
+.form-label:not([for="address"]):not([for="notes"])::after {
+    content: "*";
+    color: maroon;
+}
+
+/* .form-label:not([for="notes"])::after{
+    content: "*";
+    color: maroon;
+} */

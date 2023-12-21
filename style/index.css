@@ -32,3 +32,17 @@
     background-image: linear-gradient(147deg, #c62128 0%, #a00000 74%);
     /* height: 100vh; */
   }
+
+
+  /* Showing contents every scroll */
+section>div{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+section>div.active{
+  transform: translateY(0px);
+  opacity: 1;
+}

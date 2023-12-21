@@ -12,10 +12,16 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-  <link href="path/to/fontawesome/css/all.min.css" rel="stylesheet">
+        <link href="path/to/fontawesome/css/all.min.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/index.css">
+        <?php switch (basename($_SERVER['SCRIPT_FILENAME'])) {
+            case "index.php":
+                ?>
+                <link rel="stylesheet" href="style/index.css">
+      <?php case "visitor.php": ?>
+                <link rel="stylesheet" href="style/visitor.css">
+            <?php }?>
     </head>
 </head>
 
@@ -23,15 +29,19 @@
 
 
     <!-- Navbar in mobile devices -->
-    <div class="fixed-top bg-maroon text-iwata text-white" id="navbar-all" style="">
+    <div class="fixed-top bg-maroon text-iwata text-white" id="navbar-all">
         <!-- Start of Logo -->
         <div class="container-md d-flex align-items-center my-3 mx-auto text-center d-none">
-        <a class="navbar-brand d-flex align-items-center" href="index.php">
+            <a class="navbar-brand d-flex align-items-center" href="index.php">
                 <img src="img/lpu-logo.png" alt="Bootstrap" style="max-width: 60px; margin-right: 10px;">
 
-                <h4 class="text-white ms-0 mb-0 text-start">LYCEUM OF THE PHILIPPINES UNIVERSITY <br><small>CAVITE</small></h4>          
+                <h4 class="text-white ms-0 mb-0 text-start">LYCEUM OF THE PHILIPPINES UNIVERSITY <br><small>CAVITE</small></h4>
             </a>
+            <div class="ms-auto">
+                <a class="nav-link" href="admin/login.php">ADMIN LOG IN</a>
             </div>
+        </div>
+ 
     </div>
 
     <!-- End of Logo -->
@@ -41,16 +51,16 @@
 ">
 
         <div class="container-fluid">
-          
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="col-1 justify-content-center d-flex">
-                    <a href="index.php" class="">
-                        <img src="img/lpu-logo.png" alt="" srcset="" id="logo-white" class="img-fluid position-absolute start-46 top-15" style="height: 55px;">
-                    </a>
-                </div>
-    
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="col-1 justify-content-center d-flex">
+                <a href="index.php" class="">
+                    <img src="img/lpu-logo.png" alt="" srcset="" id="logo-white" class="img-fluid position-absolute start-46 top-15" style="height: 55px;">
+                </a>
+            </div>
+
             <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
                 <div class="offcanvas-header bg-maroon">
                     <h5 class="offcanvas-title" id="offcanvasNavbar2Label">MENU</h5>

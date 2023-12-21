@@ -1,9 +1,12 @@
 <?php include "navbar.php"; ?>
 
 <div class="container mt-5 col-md-8">
+
+    <!-- Book an Appointment -->
+
     <form>
         <!-- Heading 1: Appointment Information -->
-        <h2><i class="fas fa-calendar-alt"></i> Appointment Information</h2>
+        <h3><i class="fas fa-calendar-alt text-maroon"></i> Appointment Information</h3>
         <!-- Dropdown: Select Appointment Type -->
         <div class="row mb-4">
             <div class="col-md-6">
@@ -12,8 +15,8 @@
                     <select class="form-select" id="appointmentType" name="appointmentType" required>
                         <option value="" selected disabled>Select Appointment Type</option>
                         <option value="student">Student</option>
-                        <option value="guest">Guest</option>
                         <option value="parent">Parent</option>
+                        <option value="guest">Guest</option>
                     </select>
                 </div>
             </div>
@@ -38,7 +41,7 @@
 
         <!-- Heading 2: Add your Details -->
         <div class="row mb-4">
-            <h2><i class="fas fa-user"></i> Add your Details</h2>
+            <h3><i class="fas fa-user text-maroon"></i> Add your Details</h3>
             <div class="col-md-6">
                 <!-- First Name -->
                 <div class="mb-3">
@@ -90,7 +93,7 @@
 
 
         <!-- Heading 3: Provide additional Information -->
-        <h2><i class="fas fa-info-circle text-maroon"></i> Provide additional Information</h2>
+        <h3><i class="fas fa-info-circle text-maroon"></i> Provide additional Information</h3>
         <div class="row mb-4">
             <div class="col">
                 <!-- Student Number (Shown if "Student" is selected) -->

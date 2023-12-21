@@ -13,8 +13,8 @@
 
 <!-- Section 2: About COECSA -->
 <section>
-        <div class="row">
-            <div class="col-md-6 mx-auto">
+        <div class="row g-0">
+            <div class="col-md-6 col-10 mx-auto">
                 <h2 class="text-maroon fw-bold mt-5">About COECSA</h2>
                 <p class="text-dark mt-3">The College of Engineering, Computer Studies, and Architecture (COECSA) stands as a beacon of excellence in the realm of Architecture, Engineering, and Information Communication Technology (ICT) educational institutions. With a visionary outlook, COECSA aspires to be a leading force in shaping the educational landscape, producing graduates of exceptional quality. These individuals not only excel in their respective fields but also embody the fundamental core values of LPU, fostering a commitment to truth and fortitude in the noble service of God and Country.</p>
 
@@ -33,13 +33,15 @@
             <img src="img/calendar-horizontal.jpg" alt="" srcset="" class="img-fluid h-100" style="object-fit: cover;">
         </div>
 
-        <div class="col-md-6 mx-auto" >
+        <div class="col-md-6 col-10 mx-auto" >
                 <h2 class="text-white fw-bold mt-5 mb-3">Book an Appointment</h2>
                 <p class="text-white mb-5">If you need to set up a meeting with COECSA, just click the button below. Our team is here to help you! Whether you have questions or need assistance, we're ready to make the scheduling process easy for you. Feel free to use the button to book an appointment with the College of Engineering, Computer Studies, and Architecture. We're excited to support you during your time at COECSA!</p>
-                <a href="#" class="p-3 fs-5 badge rounded-pill border border-white text-decoration-none fw-bold">Book Now</a>
+                <a href="visitor.php" class="p-3 fs-5 badge rounded-pill border border-white text-decoration-none fw-bold">Book Now</a>
 
         </div>
     </div>
 
 
 </section>
+
+<script src="script/index.js"></script>
