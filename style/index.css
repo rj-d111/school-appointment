@@ -1,0 +1,34 @@
+  .cover-image {
+    background: url('../img/bg-coecsa.jpg') center/cover no-repeat;
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+}
+
+  .cover-image::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+  }
+
+  .vertical-center {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* width: 100vh; */
+    height: 100vh;
+    text-align: center;
+    z-index: 1; /* Ensure the text is above the filter */
+  }
+
+  #section-3{
+    background-color: #c62128;
+    background-image: linear-gradient(147deg, #c62128 0%, #a00000 74%);
+    /* height: 100vh; */
+  }
