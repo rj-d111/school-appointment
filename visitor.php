@@ -4,7 +4,7 @@
 
     <!-- Book an Appointment -->
 
-    <form>
+    <form method="post" action="success.php">
         <!-- Heading 1: Appointment Information -->
         <h3><i class="fas fa-calendar-alt text-maroon"></i> Appointment Information</h3>
         <!-- Dropdown: Select Appointment Type -->
@@ -65,8 +65,8 @@
                 </div>
             </div>
 
-              <!-- Phone No. -->
-              <div class="col-md-6">
+            <!-- Phone No. -->
+            <div class="col-md-6">
                 <div class="mb-3">
                     <label for="phone" class="form-label">Phone Number</label>
                     <input type="text" class="form-control" id="phone" name="phone" required>
@@ -93,17 +93,19 @@
 
 
         <!-- Heading 3: Provide additional Information -->
-        <h3><i class="fas fa-info-circle text-maroon"></i> Provide additional Information</h3>
-        <div class="row mb-4">
-            <div class="col">
-                <!-- Student Number (Shown if "Student" is selected) -->
+        <section id="add_info" class="d-none">
+            <h3><i class="fas fa-info-circle text-maroon"></i> Provide additional Information</h3>
+            <div class="row mb-4">
+                <div class="col">
+                    <!-- Student Number (Shown if "Student" is selected) -->
 
-                <div class="mb-3" id="studentNumberField">
-                    <label for="stud_no" class="form-label">Student Number</label>
-                    <input type="text" class="form-control" id="stud_no" name="stud_no" required>
+                    <div class="mb-3" id="studentNumberField">
+                        <label for="stud_no" class="form-label">Student Number</label>
+                        <input type="text" class="form-control" id="stud_no" name="stud_no" required>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Submit Button -->
         <div class="row">
@@ -114,3 +116,5 @@
     </form>
 </div>
 </div>
+
+<script src="script/visitor.js"></script>
