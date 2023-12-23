@@ -69,30 +69,8 @@
                 <div class="offcanvas-body bg-maroon">
                     <ul class="navbar-nav justify-content-evenly flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#section-1">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="admin/login.php">ADMIN LOG IN</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#id-types">REGISTER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-3">HOW TO APPLY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-4">REQUIREMENTS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="customer/check-status.php">CHECK STATUS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-5">CONTACT US</a>
-                        </li>
-                        <span class="admin-log-in">
-                            <hr>
-                            <li class="nav-item">
-                                <a class="nav-link" href="admin/login.php">ADMIN LOG IN</a>
-                            </li>
-                        </span>
-
                     </ul>
                 </div>
             </div>

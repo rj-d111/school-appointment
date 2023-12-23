@@ -1,3 +1,17 @@
+<?php 
+session_start();
+include "../php-connect/db_conn.php";
+
+$sql = "SELECT * FROM `tbl_appointment`";
+$stmt = $conn->execute_query($sql);
+
+if(!isset($_SESSION['email'])){
+    header("location: login.php");
+    return;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,6 +86,7 @@
                 <table class="table table-hover">
                     <thead class="table-dark">
                         <tr>
+                            <th scope="col">#</th>
                             <th scope="col">Appointment Type</th>
                             <th scope="col">Purpose of Visit</th>
                             <th scope="col">Name</th>
@@ -82,11 +97,14 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Student</td>
-                            <td>Department</td>
-                            <td>John Doe</td>
-                            <td>johndoe@example.com</td>
-                            <td>Pending</td>
+                            <?php  $i =1;
+                            while($row = $stmt->fetch_assoc()): ?>
+                            <td><?= $i ?></td>
+                            <td><?= ucwords($row['appointment_type']) ?></td>
+                            <td><?= $row['purpose_visit'] ?></td>
+                            <td><?= $row['first_name'] ?> <?= $row['last_name'] ?></td>
+                            <td><?= $row['email'] ?></td>
+                            <td><?= ucwords($row['status']) ?></td>
                             <td>
                                 <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"><i class="fas fa-eye pe-2"></i>View</a></p>
                                 <div class="dropdown">
@@ -94,12 +112,15 @@
                                         More Actions
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <li><a class="dropdown-item" href="#">Approve</a></li>
-                                        <li><a class="dropdown-item" href="#">Reject</a></li>
+                                        <li><a class="dropdown-item" href="action.php?action=approve&id=<?= $row['id']?>">Approve</a></li>
+                                        <li><a class="dropdown-item" href="action.php?action=reject&id=<?= $row['id']?>">Reject</a></li>
                                     </ul>
                                 </div>
                             </td>
                         </tr>
+                            <?php 
+                        $i++;
+                        endwhile; ?>
                     </tbody>
                 </table>
 

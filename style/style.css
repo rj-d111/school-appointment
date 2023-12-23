@@ -43,6 +43,13 @@
     background-color: var(--maroon);
 }
 
+/* button group */
+.btn-outline-maroon{
+    color: var(--maroon);
+    border: 1px solid var(--maroon);
+}
+
+
 .hide-picture{
         overflow: hidden;  
         max-width: 100vw; /* Ensure container doesn't exceed viewport width */

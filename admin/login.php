@@ -1,6 +1,6 @@
 <?php 
+session_start();
 include "navbar.php";
- session_start();
 
  if(isset($_SESSION['email'])){
      header("Location: home.php");
@@ -14,7 +14,7 @@ include "navbar.php";
             <!-- Start of Login Page -->
             <form class="form-signin" action="function.php" method="post">
                 <div class="text-center">
-                <i class="fas fa-user-tie text-maroon fs-1"></i>
+                <i class="fas fa-user-tie text-maroon mb-4" style="font-size: 120px;"></i>
                 <h1 class="h3 mb-3 fw-bold">ADMIN LOG IN</h1>
                 </div>
                 <?php if(isset($_GET['incorrect']) && $_GET['incorrect']){ ?>
