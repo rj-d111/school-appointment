@@ -1,10 +1,10 @@
 <?php 
 include "navbar.php";
-// session_start();
+ session_start();
 
-// if(isset($_SESSION['email'])){
-//     header("Location: home.php");
-// }
+ if(isset($_SESSION['email'])){
+     header("Location: home.php");
+ }
 
 ?>
 

@@ -15,85 +15,36 @@
         <link href="path/to/fontawesome/css/all.min.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/admin.css">
     </head>
 </head>
 
 <body>
 
 
-    <!-- Navbar in mobile devices -->
-    <div class="fixed-top bg-maroon text-iwata text-white" id="navbar-all">
-        <!-- Start of Logo -->
-        <div class="container-md d-flex align-items-center my-3 mx-auto text-center d-none">
-            <a class="navbar-brand d-flex align-items-center" href="index.php">
-                <img src="img/lpu-logo.png" alt="Bootstrap" style="max-width: 60px; margin-right: 10px;">
+    <!-- Start of Admin Navbar -->
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg text-iwata navbar-dark bg-maroon fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <h4 class="text-white ms-0 mb-0 text-start">LYCEUM OF THE PHILIPPINES UNIVERSITY <br><small>CAVITE</small></h4>
-            </a>
-            <div class="ms-auto">
-                <a class="nav-link" href="admin/login.php">ADMIN LOG IN</a>
+                <div class="me-auto">
+                    <a class="navbar-brand" href="#">LYCEUM OF THE PHILIPPINES UNIVERSITY</a>
+                </div>
             </div>
-        </div>
+        </nav>
+    </header>
 
-    </div>
-
-    <!-- End of Logo -->
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-maroon" aria-label="Offcanvas navbar large" style="
-    height: 80px;
-">
-
-        <div class="container-fluid">
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="col-1 justify-content-center d-flex">
-                <a href="index.php" class="">
-                    <img src="img/lpu-logo.png" alt="" srcset="" id="logo-white" class="img-fluid position-absolute start-46 top-15" style="height: 55px;">
-                </a>
-            </div>
-        </div>
-
-        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-            <div class="offcanvas-header bg-maroon">
-                <h5 class="offcanvas-title" id="offcanvasNavbar2Label">MENU</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body bg-maroon">
-                <ul class="navbar-nav justify-content-evenly flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#section-1">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#id-types">REGISTER</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section-3">HOW TO APPLY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section-4">REQUIREMENTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="customer/check-status.php">CHECK STATUS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section-5">CONTACT US</a>
-                    </li>
-                    <span class="admin-log-in">
-                        <hr>
-                        <li class="nav-item">
-                            <a class="nav-link" href="admin/login.php">ADMIN LOG IN</a>
-                        </li>
-                    </span>
-
-                </ul>
-            </div>
-        </div>
-
+    <nav class="col-3 bg-maroon h-100" style="height: 100vh;">
+        <a class="navbar-brand" href="#">INFO</a>
     </nav>
 
-    <!-- End of navbar in mobile devices -->
+
+    <!-- End of Admin Navbar -->
+
 
     <section id="fix-top"></section>
 
