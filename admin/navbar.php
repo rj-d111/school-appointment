@@ -6,7 +6,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AIMS Student Portal</title>
+        <title>Admin Login</title>
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -14,14 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
         <link href="path/to/fontawesome/css/all.min.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style/style.css">
-        <?php switch (basename($_SERVER['SCRIPT_FILENAME'])) {
-            case "index.php":
-                ?>
-                <link rel="stylesheet" href="style/index.css">
-      <?php case "visitor.php": ?>
-                <link rel="stylesheet" href="style/visitor.css">
-            <?php }?>
+        <link rel="stylesheet" href="../style/style.css">
     </head>
 </head>
 
@@ -41,7 +34,7 @@
                 <a class="nav-link" href="admin/login.php">ADMIN LOG IN</a>
             </div>
         </div>
- 
+
     </div>
 
     <!-- End of Logo -->
@@ -60,41 +53,41 @@
                     <img src="img/lpu-logo.png" alt="" srcset="" id="logo-white" class="img-fluid position-absolute start-46 top-15" style="height: 55px;">
                 </a>
             </div>
+        </div>
 
-            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-                <div class="offcanvas-header bg-maroon">
-                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">MENU</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body bg-maroon">
-                    <ul class="navbar-nav justify-content-evenly flex-grow-1 pe-3">
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header bg-maroon">
+                <h5 class="offcanvas-title" id="offcanvasNavbar2Label">MENU</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-maroon">
+                <ul class="navbar-nav justify-content-evenly flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#section-1">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#id-types">REGISTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-3">HOW TO APPLY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-4">REQUIREMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="customer/check-status.php">CHECK STATUS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-5">CONTACT US</a>
+                    </li>
+                    <span class="admin-log-in">
+                        <hr>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#section-1">HOME</a>
+                            <a class="nav-link" href="admin/login.php">ADMIN LOG IN</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#id-types">REGISTER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-3">HOW TO APPLY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-4">REQUIREMENTS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="customer/check-status.php">CHECK STATUS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-5">CONTACT US</a>
-                        </li>
-                        <span class="admin-log-in">
-                            <hr>
-                            <li class="nav-item">
-                                <a class="nav-link" href="admin/login.php">ADMIN LOG IN</a>
-                            </li>
-                        </span>
+                    </span>
 
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
 
@@ -106,4 +99,4 @@
 
 
     <!-- Script for navbar -->
-    <script src="script/navbar.js"></script>
+    <script src="../script/navbar.js"></script>
